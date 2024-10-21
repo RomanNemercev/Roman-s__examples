@@ -17,7 +17,7 @@ multiSelect();
 // scroll in select
 
 Array.prototype.forEach.call(
-  document.querySelectorAll('.dropdown-content'),
+  document.querySelectorAll('.choices__list'),
   (el) => new SimpleBar(el, {
     autoHide: false,
     scrollbarMaxSize: 28,
@@ -410,85 +410,3 @@ for (let smoothLink of smoothLinks) {
     });
   });
 }
-
-// create a new dropdown for header nav-bar
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdownContainers = document.querySelectorAll('.dropdown-container');
-
-  dropdownContainers.forEach(container => {
-    const button = container.querySelector('.header__btn-genre');
-    const dropdown = container.querySelector('.dropdown-content');
-    const arrow = container.querySelector('.header__btn-arrow svg');
-
-    button.addEventListener('click', function(event) {
-      event.stopPropagation(); // Остановка всплытия события
-      if (dropdown.style.display === 'block') {
-        closeDropdown(container);
-      } else {
-        closeAllDropdowns(); // Закрываем все другие списки перед открытием текущего
-        openDropdown(container);
-      }
-    });
-
-    dropdown.querySelectorAll('button').forEach(option => {
-      option.addEventListener('click', function(event) {
-        event.stopPropagation(); // Остановка всплытия события
-        button.firstChild.textContent = this.textContent; // Обновляем текст кнопки
-        closeDropdown(container);
-      });
-    });
-  });
-
-  document.addEventListener('click', function() {
-    closeAllDropdowns();
-  });
-
-  function openDropdown(container) {
-    const dropdown = container.querySelector('.dropdown-content');
-    const arrow = container.querySelector('.header__btn-arrow svg');
-    dropdown.style.display = 'block';
-    arrow.classList.add('rotate');
-  }
-
-  function closeDropdown(container) {
-    const dropdown = container.querySelector('.dropdown-content');
-    const arrow = container.querySelector('.header__btn-arrow svg');
-    dropdown.style.display = 'none';
-    arrow.classList.remove('rotate');
-  }
-
-  function closeAllDropdowns() {
-    dropdownContainers.forEach(container => {
-      closeDropdown(container);
-    });
-  }
-});
-
-//auto height for events description
-document.addEventListener('DOMContentLoaded', function() {
-  function adjustHeight() {
-    var contents = document.querySelectorAll('.events__content');
-    var maxHeight = 0;
-
-    // Сброс высоты перед расчетом
-    contents.forEach(function(content) {
-      content.style.height = 'auto';
-    });
-
-    // Вычисление максимальной высоты
-    contents.forEach(function(content) {
-      if (content.offsetHeight > maxHeight) {
-        maxHeight = content.offsetHeight;
-      }
-    });
-
-    // Применение максимальной высоты ко всем блокам
-    contents.forEach(function(content) {
-      content.style.height = maxHeight + 'px';
-    });
-  }
-
-  // Вызов функции при загрузке страницы и изменении размера окна
-  adjustHeight();
-  window.addEventListener('resize', adjustHeight);
-});

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="libs/choices.min.css">
   <link rel="stylesheet" href="libs/simplebar.css">
   <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-  <link rel="stylesheet" href="libs/accordion.min.css">
+  <link rel="stylesheet" href=libs/accordion.min.css>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -49,117 +49,109 @@
       </div>
     </div>
   </div>
-  <div class="header-back">
-    <div class="container">
-      <div class="header__bottom">
-        <ul class="header__btns-wrapper list-reset">
-          <li class="dropdown-container">
-            <button class="btn-reset header__btn-genre">Реализм<span class="header__btn-arrow"><svg width="12"
-                                                                                                    height="7"
-                                                                                                    viewBox="0 0 12 7"
-                                                                                                    fill="none"
-                                                                                                    xmlns="http://www.w3.org/2000/svg">
-            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"></path>
-            </svg></span></button>
-            <div class="dropdown-content" data-simplebar>
-              <button class="dropdown-content__btn tintoretto bg-fix">Тинторетто</button>
-              <button class="dropdown-content__btn fridrih bg-fix">Фридрих</button>
-              <button class="dropdown-content__btn leonardo bg-fix">Леонардо</button>
-              <button class="dropdown-content__btn verrokko bg-fix">Верроккьо</button>
-            </div>
-          </li>
-          <li class="dropdown-container">
-            <button class="btn-reset header__btn-genre">Импрессионизм<span class="header__btn-arrow"><svg width="12"
-                                                                                                          height="7"
-                                                                                                          viewBox="0 0 12 7"
-                                                                                                          fill="none"
-                                                                                                          xmlns="http://www.w3.org/2000/svg">
-            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"></path>
-            </svg></span></button>
-            <div class="dropdown-content">
-              <button class="dropdown-content__btn bg-fix mone">Моне</button>
-              <button class="dropdown-content__btn bg-fix sisley">Сислей</button>
-              <button class="dropdown-content__btn bg-fix mane">Мане</button>
-              <button class="dropdown-content__btn bg-fix renuar">Ренуар</button>
-            </div>
-          </li>
-          <li class="dropdown-container">
-            <button class="btn-reset header__btn-genre">Постимпрессионизм<span class="header__btn-arrow"><svg width="12"
-                                                                                                              height="7"
-                                                                                                              viewBox="0 0 12 7"
-                                                                                                              fill="none"
-                                                                                                              xmlns="http://www.w3.org/2000/svg">
-            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"></path>
-            </svg></span></button>
-            <div class="dropdown-content">
-              <button class="dropdown-content__btn vincent">Ван Гог</button>
-              <button class="dropdown-content__btn sezan">Сезанн</button>
-              <button class="dropdown-content__btn gogen">Гоген</button>
-              <button class="dropdown-content__btn sera">Сёра</button>
-            </div>
-          </li>
-          <li class="dropdown-container">
-            <button class="btn-reset header__btn-genre">Авангард<span class="header__btn-arrow"><svg width="12"
-                                                                                                     height="7"
-                                                                                                     viewBox="0 0 12 7"
-                                                                                                     fill="none"
-                                                                                                     xmlns="http://www.w3.org/2000/svg">
-            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"></path>
-            </svg></span></button>
-            <div class="dropdown-content">
-              <button class="dropdown-content__btn kandinski">Кандинский</button>
-              <button class="dropdown-content__btn marinetti">Маринетти</button>
-              <button class="dropdown-content__btn malevich">Малевич</button>
-              <button class="dropdown-content__btn picasso">Пикассо</button>
-            </div>
-          </li>
-          <li class="dropdown-container">
-            <button class="btn-reset header__btn-genre">Футуризм<span class="header__btn-arrow"><svg width="12"
-                                                                                                     height="7"
-                                                                                                     viewBox="0 0 12 7"
-                                                                                                     fill="none"
-                                                                                                     xmlns="http://www.w3.org/2000/svg">
-            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"></path>
-            </svg></span></button>
-            <div class="dropdown-content">
-              <button class="dropdown-content__btn bg-fix kappa">Карра</button>
-              <button class="dropdown-content__btn bg-fix pratella">Прателла</button>
-              <button class="dropdown-content__btn bg-fix severini">Северини</button>
-              <button class="dropdown-content__btn bg-fix balla">Балла</button>
-            </div>
-          </li>
-        </ul>
-        <div class="header__search-bottom">
-          <form action="#" class="header__search-form">
-            <button class="header__search btn-reset" aria-label="Начать поиск"></button>
-            <input class="header__search-input" type="text" placeholder="Поиск по сайту"
-                   aria-label="Поле для ввода текста поиска">
-            <button class="header__search-close btn-reset" aria-label="Закрыть поиск">
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
-                      fill="white"/>
-                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
-                      fill="white"/>
-              </svg>
-            </button>
-          </form>
+  <div class="background-opacity">
+    <div class="header__bottom">
+      <div class="header__select">
+        <div class="header__select-wrapper background-first">
+          <label for="genre_first" aria-label="Выберите жанр"></label>
+          <select name="select" class="header__select-tab" id="genre_first">
+            <option value="">Реализм</option>
+            <option value="Тинторетто" class="tintoretto">Тинторетто</option>
+            <option value="Фридрих">Фридрих</option>
+            <option value="Леонардо">Леонардо</option>
+            <option value="Верроккьо">Верроккьо</option>
+          </select>
+          <span class="header__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"/>
+          </svg>
+          </span>
         </div>
+        <div class="header__select-wrapper background-second">
+          <label for="genre_second" aria-label="Выберите жанр"></label>
+          <select name="select" class="header__select-tab" id="genre_second">
+            <option value="">Импрессионизм</option>
+            <option value="Моне">Моне</option>
+            <option value="Сислей">Сислей</option>
+            <option value="Мане">Мане</option>
+            <option value="Ренуар">Ренуар</option>
+          </select>
+          <span class="header__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"/>
+          </svg>
+          </span>
+        </div>
+        <div class="header__select-wrapper background-third">
+          <label for="genre_third" aria-label="Выберите жанр"></label>
+          <select name="select" class="header__select-tab" id="genre_third">
+            <option value="">Постимпрессионизм</option>
+            <option value="Ван Гог">Ван Гог</option>
+            <option value="Сезанн">Сезанн</option>
+            <option value="Гоген">Гоген</option>
+            <option value="Сёра">Сёра</option>
+          </select>
+          <span class="header__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"/>
+          </svg>
+          </span>
+        </div>
+        <div class="header__select-wrapper background-fourth">
+          <label for="genre_fourth" aria-label="Выберите жанр"></label>
+          <select name="select" class="header__select-tab" id="genre_fourth">
+            <option value="">Авангард</option>
+            <option value="Кандинский">Кандинский</option>
+            <option value="Маринетти">Маринетти</option>
+            <option value="Малевич">Малевич</option>
+            <option value="Пикассо">Пикассо</option>
+          </select>
+          <span class="header__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"/>
+          </svg>
+          </span>
+        </div>
+        <div class="header__select-wrapper background-fifth">
+          <label for="genre_fifth" aria-label="Выберите жанр"></label>
+          <select name="select" class="header__select-tab" id="genre_fifth">
+            <option value="">Футуризм</option>
+            <option value="Карра">Карра</option>
+            <option value="Прателла">Прателла</option>
+            <option value="Северини">Северини</option>
+            <option value="Балла">Балла</option>
+          </select>
+          <span class="header__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__arrow-path" d="M11 1L6 6L1 1" stroke="white"/>
+          </svg>
+          </span>
+        </div>
+      </div>
+      <div class="header__search-bottom">
+        <button class="header__search btn-reset" aria-label="Начать поиск"></button>
+        <form action="#" class="header__search-form">
+          <input class="header__search-input" type="text" placeholder="Поиск по сайту"
+                 aria-label="Поле для ввода текста поиска">
+          <button class="header__search-close btn-reset" aria-label="Закрыть поиск">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
+                    fill="white"/>
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
+                    fill="white"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </div>
 </header>
 <main>
-  <h1 class="visually-hidden">Картинная галерея Blanchard - коллекция произведений искусства</h1>
-<!--  варианты для теста сео-->
-<!--  <h1 class="visually-hidden">Blanchard Gallery - шедевры живописи и искусства</h1>-->
-<!--  <h1 class="visually-hidden">Современное и классическое искусство в галерее Blanchard</h1>-->
-<!--  <h1 class="visually-hidden">Выставка картин и искусств в галерее Blanchard</h1>-->
-<!--  <h1 class="visually-hidden">Blanchard - картинная галерея с уникальными произведениями искусства</h1>-->
-  <section class="hero">
+  <aside class="hero">
     <div class="hero__slider">
       <div class="hero__content">
-        <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+        <div class="hero__title">Прикоснитесь к&nbsp;прекрасному</div>
         <p class="hero__descr">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых
           заданий
           создаёт предпосылки для новых предложений</p>
@@ -173,7 +165,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </aside>
   <section class="about" id="about_us">
     <div class="container">
       <h2 class="about__title title">О нас</h2>
@@ -204,7 +196,7 @@
                 </select>
               </div>
             </div>
-            <div class="gallery__filter-time custom-overflow">
+            <div class="gallery__filter-time">
               <div class="gallery__filter-list">
                 <label class="gallery__label">
                   <input type="checkbox" class="gallery__input gallery__input-hidden">
@@ -224,7 +216,7 @@
           <div class="gallery__arts">
             <div class="swiper gallery__swiper">
               <div class="swiper-wrapper">
-                <button class="swiper-slide btn-reset" id="btn-slide-1">
+                <button class="swiper-slide btn-reset" id="btn-slide-1" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_first.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_first-1024.jpg"
@@ -239,7 +231,7 @@
                     <img src="img/gallery__img_first.jpg" alt="Малевич К.С. Женский торс">
                   </picture>
                 </button>
-                <button class="swiper-slide btn-reset" id="btn-slide-2">
+                <button class="swiper-slide btn-reset" id="btn-slide-2" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_second.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_second-1024.jpg"
@@ -254,7 +246,7 @@
                     <img src="img/gallery__img_second.jpg" alt="Казимир Северинович Женщина с граблями">
                   </picture>
                 </button>
-                <button class="swiper-slide btn-reset">
+                <button class="swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_third.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_third-1024.jpg"
@@ -269,7 +261,7 @@
                     <img src="img/gallery__img_third.jpg" alt="Казимир Северинович Уборка ржи">
                   </picture>
                 </button>
-                <button class="swiper-slide btn-reset">
+                <button class="swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_fourth.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_fourth-1024.jpg"
@@ -284,7 +276,7 @@
                     <img src="img/gallery__img_fourth.jpg" alt="Клюн И.В. Супрематизм">
                   </picture>
                 </button>
-                <button class="swiper-slide btn-reset">
+                <button class="swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_fifth.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_fifth-1024.jpg"
@@ -299,7 +291,7 @@
                     <img src="img/gallery__img_fifth.jpg" alt="Казимир Северенович Женщина с ведрами">
                   </picture>
                 </button>
-                <button class="swiper-slide btn-reset">
+                <button class="swiper-slide btn-reset" tabindex="0">
                   <picture>
                     <source srcset="img/gallery__img_sixth.jpg" type="image/jpeg" media="(min-width: 1920px)">
                     <source srcset="img/gallery__img_sixth-1024.jpg"
@@ -319,6 +311,44 @@
             <div class="gallery-button-prev"></div>
             <div class="gallery-button-next"></div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="gallery__modal modal" id="modal-slide-2">
+          <div class="modal__content-wrapper">
+            <button class="modal__btn" id="modal-slide-2-close" aria-label="Закрыть модальное окно">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="modal__icon" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black"/>
+                <path class="modal__icon" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black"/>
+              </svg>
+            </button>
+            <picture class="modal__picture">
+              <source srcset="img/modal__slide_2.jpg" type="image/jpeg" media="(min-width: 1920px)">
+              <source srcset="img/modal__slide_2-1024.jpg"
+                      type="image/jpeg"
+                      media="(min-width: 1024px)">
+              <source srcset="img/modal__slide_2-768.jpg"
+                      type="image/jpeg"
+                      media="(min-width: 768px)">
+              <source srcset="img/modal__slide_2-320.jpg"
+                      type="image/jpeg"
+                      media="(max-width: 768px)">
+              <img src="img/modal__slide_2.jpg" alt="Казимир Малевич Женщина с граблями">
+            </picture>
+            <div class="modal__content">
+              <h3 class="modal__author">Казимир Малевич</h3>
+              <h4 class="modal__art">«Женщина с граблями»</h4>
+              <span><time class="modal__time" datetime="1931">1931</time>-<time class="modal__time"
+                                                                                datetime="1932">1932</time></span>
+              <p class="modal__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник
+                принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был
+                утерян
+                после Берлинской и&nbsp;Варшавской выставок в&nbsp;<time datetime="1927">1927</time>&nbsp;году.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -419,11 +449,7 @@
             </div>
           </div>
           <div class="magazine__content" data-target="0">
-            <picture>
-              <source type="image/png" media="(max-width: 768px)" srcset="img/magazine_img_null-768.png">
-              <source type="image/png" media="(max-width: 1024px)" srcset="img/magazine_img_null-1024.png">
-              <img src="img/magazine__img_null.jpg" alt="Нет информации о художнике" class="magazine__img-null">
-            </picture>
+            <img src="img/magazine__img_null.jpg" alt="Нет информации о художнике" class="magazine__img-null">
             <div class="magazine__info">
               <span class="magazine__name">Что мы&nbsp;о&nbsp;нём знаем?</span>
               <div class="magazine__descr-null descr">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
@@ -436,7 +462,7 @@
         <div class="magazine__accordion accordion">
           <ul class="accordion__list">
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C&nbsp;1400 по&nbsp;1499&nbsp;гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -520,7 +546,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 1500 по 1599 гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -534,7 +560,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 1600 по 1699 гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -548,7 +574,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 1700 по 1799 гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -562,7 +588,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 1800 по 1899 гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -576,7 +602,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 1900 по 1999 гг</span>
                 <span class="accordion__span"></span>
               </button>
@@ -590,7 +616,7 @@
               </div>
             </li>
             <li class="list-reset accordion__border element-class">
-              <button class="accordion__control btn-reset">
+              <button class="accordion__control btn-reset" tabindex="0">
                 <span class="accordion__title">C 2000 г</span>
                 <span class="accordion__span"></span>
               </button>
@@ -628,20 +654,17 @@
                         media="(max-width: 768px)">
                 <img class="events__img" src="img/events_first.jpg" alt="Гравюра Руки Дюрера">
               </picture>
-              <div class="events__content">
+              <article class="events__content">
               <span class="events__caption">Музей им. Щусева<br>с&nbsp;<time datetime="03-20">20&nbsp;марта</time> по&nbsp;<time
                 datetime="04-30">30&nbsp;апреля</time></span>
                 <h3 class="events__descr-first">Книжная гравюра в&nbsp;<span class="events__title320">живом</span>
                   восприятии
                 </h3>
-                <p class="events__descr-second">Один из ведущих флорентийских художников Кватроченто, основатель
-                  художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
-                <div class="events__content-custom">
-                  <a
-                    href="#"
-                    class="events__more">Подробнее</a>
-                </div>
-              </div>
+                <p class="events__descr-second">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
+                  художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын&nbsp;Ридольфо</p><a
+                href="#"
+                class="events__more">Подробнее</a>
+              </article>
             </div>
             <div class="swiper-slide">
               <picture>
@@ -657,20 +680,15 @@
                         media="(max-width: 768px)">
                 <img class="events__img" src="img/events_second.jpg" alt="Фотография Дмитрия Петрова">
               </picture>
-              <div class="events__content">
+              <article class="events__content">
                 <span class="events__caption">ММОМА<br><time
                   datetime="2023-03-24T19:00">24&nbsp;марта 19:00</time></span>
                 <h3 class="events__descr-first">&laquo;Открытая дискуссия&raquo;. Дмитрий&nbsp;Петров и&nbsp;Сергей
                   Ильин.</h3>
                 <p class="events__descr-second">Высокий уровень вовлечения представителей целевой аудитории является
                   чётким
-                  доказательством простого факта</p>
-                <div class="events__content-custom">
-                  <a
-                    href="#"
-                    class="events__more">Подробнее</a>
-                </div>
-              </div>
+                  доказательством простого факта</p><a href="#"
+                                                       class="events__more">Подробнее</a></article>
             </div>
             <div class="swiper-slide">
               <picture>
@@ -686,19 +704,15 @@
                         media="(max-width: 768px)">
                 <img class="events__img" src="img/events_third.jpg" alt="Зал картиной галереи">
               </picture>
-              <div class="events__content">
+              <article class="events__content">
               <span class="events__caption">Еврейский музей<br>с <time datetime="03-31">31&nbsp;марта</time> по&nbsp;<time
                 datetime="04-21">21&nbsp;апреля</time></span>
                 <h3 class="events__descr-first">Выставка &laquo;Формация 2020&raquo;</h3>
                 <p class="events__descr-second">Идейные соображения высшего порядка, а&nbsp;также современная
                   методология
-                  разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
-                <div class="events__content-custom">
-                  <a
-                    href="#"
-                    class="events__more">Подробнее</a>
-                </div>
-              </div>
+                  разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p><a href="#"
+                                                                                                       class="events__more">Подробнее</a>
+              </article>
             </div>
             <div class="swiper-slide">
               <picture>
@@ -714,19 +728,15 @@
                         media="(max-width: 768px)">
                 <img class="events__img" src="img/events_fourth.jpg" alt="Фотография их серии метафора">
               </picture>
-              <div class="events__content">
+              <article class="events__content">
                 <span class="events__caption">ММАМ
                 <br>
                 с <time datetime="04-08">8&nbsp;апреля</time> по&nbsp;<time datetime="05-20">20&nbsp;мая</time></span>
                 <h3 class="events__descr-first">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
                 <p class="events__descr-second">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
-                <div class="events__content-custom">
-                  <a
-                    href="#"
-                    class="events__more">Подробнее</a>
-                </div>
-              </div>
+                <a href="#" class="events__more">Подробнее</a>
+              </article>
             </div>
             <div class="swiper-slide">
               <picture>
@@ -742,18 +752,13 @@
                         media="(max-width: 768px)">
                 <img class="events__img" src="img/events_fifth.jpg" alt="Пример молодого искусства">
               </picture>
-              <div class="events__content">
+              <article class="events__content">
               <span class="events__caption">Третьяковка на&nbsp;Крымском валу<br><time
                 datetime="03-30">30&nbsp;марта</time> по&nbsp;<time datetime="04-30">30&nbsp;апреля</time></span>
                 <h3 class="events__descr-first">XXIV Международная биеннале молодого искусства</h3>
                 <p class="events__descr-second">Внезапно, реплицированные с&nbsp;зарубежных источников, современные
-                  исследования</p>
-                <div class="events__content-custom">
-                  <a
-                    href="#"
-                    class="events__more">Подробнее</a>
-                </div>
-              </div>
+                  исследования</p><a href="#"
+                                     class="events__more">Подробнее</a></article>
             </div>
           </div>
         </div>
@@ -866,11 +871,12 @@
               <input type="tel" id="tel" class="tel send-us__input" name="tel" placeholder="Телефон*">
             </label>
           </div>
-          <button class="btn-reset btn768">Заказать<span class="send-us__btn320"> обратный звонок</span></button>
+          <button class="btn-reset btn768">Заказать обратный звонок</button>
+          <button class="btn-reset btn320">Заказать</button>
         </form>
       </div>
       <div class="social">
-        <span class="send-us__callback">Связаться в один клик</span>
+        <h4 class="send-us__callback">Связаться в один клик</h4>
         <div class="social__links">
           <a href="#" class="social__link wh" aria-label="Перейти в вацап"></a>
           <a href="#" class="social__link tg" aria-label="Перейти в телеграм"></a>
@@ -895,44 +901,6 @@
     </div>
   </div>
 </footer>
-<div class="gallery-modal modal" id="modal-slide-2">
-  <div class="modal__content-wrapper">
-    <button class="modal__btn" id="modal-slide-2-close" aria-label="Закрыть модальное окно">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="modal__icon" fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
-              fill="black"/>
-        <path class="modal__icon" fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
-              fill="black"/>
-      </svg>
-    </button>
-    <picture class="modal__picture">
-      <source srcset="img/modal__slide_2.jpg" type="image/jpeg" media="(min-width: 1920px)">
-      <source srcset="img/modal__slide_2-1024.jpg"
-              type="image/jpeg"
-              media="(min-width: 1024px)">
-      <source srcset="img/modal__slide_2-768.jpg"
-              type="image/jpeg"
-              media="(min-width: 768px)">
-      <source srcset="img/modal__slide_2-320.jpg"
-              type="image/jpeg"
-              media="(max-width: 768px)">
-      <img src="img/modal__slide_2.jpg" alt="Казимир Малевич Женщина с граблями">
-    </picture>
-    <div class="modal__content">
-      <h3 class="modal__author">Казимир Малевич</h3>
-      <span class="modal__art">«Женщина с граблями»</span>
-      <span class="modal__art-descr"><time class="modal__time" datetime="1931">1931</time>-<time class="modal__time"
-                                                                                                 datetime="1932">1932</time></span>
-      <p class="modal__descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник
-        принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был
-        утерян
-        после Берлинской и&nbsp;Варшавской выставок в&nbsp;<time datetime="1927">1927</time>&nbsp;году.
-      </p>
-    </div>
-  </div>
-</div>
 <script src="libs/choices.min.js"></script>
 <script src="libs/simplebar.min.js"></script>
 <script src="libs/popper.min.js"></script>
@@ -944,4 +912,3 @@
 <script src="libs/inputmask.min.js"></script>
 <script defer src="js/script.js"></script>
 </body>
-</html>
